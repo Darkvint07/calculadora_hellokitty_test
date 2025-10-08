@@ -1,0 +1,101 @@
+body {
+    background-color: #fff0f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+.calculadora {
+    background-color: #ff69b4;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.5);
+    width: 320px;
+}
+
+.display {
+    width: 100%;
+    height: 50px;
+    font-size: 1.8rem;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    margin-bottom: 15px;
+    background-color: #fff0f6;
+    color: #cc0077;
+    box-shadow: insent 0 2px 5px rgba(204, 0, 119, 0.3);
+
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+button {
+    padding: 18px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    border: none;
+    background-color: #ff99cc;
+    color: #fff font-wight;
+    bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 3px #cc0077;
+}
+
+button:hover {
+    background-color: #ff4d94;
+}
+
+.igual {
+    grid-column: span 4;
+    background-color: #cc0077;
+    box-shadow: 0 3px #990055;
+
+}
+
+.igual:hover {
+    background-color: #990055;
+}
+
+.hello-img {
+    width: 80px;
+    margin-bottom: 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body.dark {
+    background-color: #222;
+}
+
+.dark .calculadora {
+    background-color: #5a2350;
+    box-shadow: 0 4px 16px #aa27bb66
+}
+
+.dark .display {
+    background-color: #352436;
+    color: #f8bfe7;
+    box-shadow: 0 2px #87256a;
+}
+
+.dark button {
+    background-color: #c559c5;
+    color: #fff;
+    box-shadow: 0 2px #87256a;
+}
+
+.dark button.igual {
+    background-color: #952fb5;
+    box-shadow: 0 2px #6b1c5f;
+}
